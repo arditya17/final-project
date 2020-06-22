@@ -17,4 +17,6 @@
 
 Route::get('/','AdminController@dashboard');
 Route::get('/info','InfoAkademik@index');
+Route::get('/info/create','InfoAkademik@create');
 Route::get('/info/{info}','InfoAkademik@show');
+Route::post('/info','InfoAkademik@store');

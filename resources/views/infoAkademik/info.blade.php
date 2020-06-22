@@ -50,7 +50,7 @@
 
         <div class="card-header">
 
-          <h3 class="card-title">Klik</h3>
+          <h3 class="card-title"><a href="/info/create" class="btn btn-primary">Tambah Data Info Akademik</a></h3>
 
 
 

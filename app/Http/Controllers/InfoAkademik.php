@@ -27,7 +27,7 @@ class InfoAkademik extends Controller
      */
     public function create()
     {
-        //
+        return view('infoAkademik.create');
     }
 
     /**
@@ -38,7 +38,8 @@ class InfoAkademik extends Controller
      */
     public function store(Request $request)
     {
-        //
+        Info::create($request->all());
+        return redirect('/info');
     }
 
     /**

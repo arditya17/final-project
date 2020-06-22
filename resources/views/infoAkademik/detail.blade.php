@@ -22,7 +22,7 @@
 
             <ol class="breadcrumb float-sm-right">
 
-              <li class="breadcrumb-item"><a href="#">Home</a></li>
+              <li class="breadcrumb-item"><a href="/">Home</a></li>
 
               <li class="breadcrumb-item active">{{$detail}}</li>
 
@@ -54,6 +54,10 @@
 
         <div class="card-body">
           <p>{{$info->isi_info}} </p>
+
+          <button type="submit" class="btn btn-primary"> Edit</button>
+          <button type="submit" class="btn btn-danger"> Delete</button>
+          <a href="/info" class="card-link">Kembali</a>
         </div>
 
         <!-- /.card-body -->
