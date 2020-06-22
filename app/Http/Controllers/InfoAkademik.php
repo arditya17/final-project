@@ -38,7 +38,14 @@ class InfoAkademik extends Controller
      */
     public function store(Request $request)
     {
-        Info::create($request->all());
+        // Info::create($request->all());
+        // return redirect('/info');
+        $info = new info;
+        $info->judul_info = $request->judul_info;
+        $info->isi_info = $request->isi_info;
+    
+        $info->save();
+
         return redirect('/info');
     }
 

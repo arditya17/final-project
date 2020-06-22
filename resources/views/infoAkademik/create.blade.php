@@ -70,7 +70,18 @@
         <div class="card-body">
         <form method="post" action="/info"> 
         @csrf
-          <div class="form-group">
+        <div class="form-group">
+            <label for="nama">Judul</label>
+            <input type="text" class="form-control" id="judul_info" name="judul_info">
+        </div>
+
+        <div class="form-group">
+            <label for="deskripsi">Isi Judul</label>
+            <input type="text" class="form-control" id="isi_info" name="isi_info">
+        </div>
+
+        <button type="submit" class="btn btn-primary mb-2">Simpan</button>
+          <!-- <div class="form-group">
             <label for="judul_info">Judul</label>
             <input type="text" class="form-control" id="judul_info" placeholder="Masukan Judul">
           </div>
@@ -80,7 +91,7 @@
             <input type="text" class="form-control" id="isi_info" Placeholder="Masukan Isi">
           </div>
 
-          <button type="submit" class="btn btn-primary">Tambah Data</button>
+          <button type="submit" class="btn btn-primary">Tambah Data</button> -->
           
         </form>
         </div>

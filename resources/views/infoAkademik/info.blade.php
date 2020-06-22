@@ -83,7 +83,6 @@
               <tr>
                 <th scope="row">{{ $loop->iteration}}</th>
                 <td>{{ $inf->judul_info }}</td>
-                <!-- <td>{{ $inf->isi_info }}</td> -->
                 <td>
                   <a href="/info/{{ $inf->id }}" class="badge badge-info">detail</a>
                   <a href="" class="badge badge-danger">delete</a>
