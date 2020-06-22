@@ -1,5 +1,6 @@
 @extends('layout.master')
 
+@section('title', 'Info Akademik')
 
 @section('content')
 
@@ -13,7 +14,7 @@
 
           <div class="col-sm-6">
 
-            <h1>Info Akademik</h1>
+            <h1>{{$judul}}</h1>
 
           </div>
 
@@ -23,7 +24,7 @@
 
               <li class="breadcrumb-item"><a href="#">Home</a></li>
 
-              <li class="breadcrumb-item active">Info Akademik</li>
+              <li class="breadcrumb-item active">{{$judul}}</li>
 
             </ol>
 
@@ -68,8 +69,29 @@
         </div>
 
         <div class="card-body">
-
-
+          <table class="table">
+            <thead class="thead-dark">
+              <tr>
+                <th scope="col">#</th>
+                <th scope="col">Judul</th>
+                <!-- <th scope="col">Info</th>              -->
+                <th scope="col">Aksi</th>             
+              </tr>
+            </thead>
+            <tbody>
+              @foreach( $info as $inf)
+              <tr>
+                <th scope="row">{{ $loop->iteration}}</th>
+                <td>{{ $inf->judul_info }}</td>
+                <!-- <td>{{ $inf->isi_info }}</td> -->
+                <td>
+                  <a href="/info/{{ $inf->id }}" class="badge badge-info">detail</a>
+                  <a href="" class="badge badge-danger">delete</a>
+                </td>
+              </tr>
+              @endforeach
+            </tbody>
+          </table>
         </div>
 
         <!-- /.card-body -->

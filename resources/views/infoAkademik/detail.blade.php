@@ -1,6 +1,6 @@
 @extends('layout.master')
 
-@section('title', 'Dashboard')
+@section('title', 'Detail Info')
 
 @section('content')
 
@@ -14,7 +14,7 @@
 
           <div class="col-sm-6">
 
-            <h1>{{$judul}}</h1>
+            <h1>{{$detail}}</h1>
 
           </div>
 
@@ -24,7 +24,7 @@
 
               <li class="breadcrumb-item"><a href="#">Home</a></li>
 
-              <li class="breadcrumb-item active">{{$judul}}</li>
+              <li class="breadcrumb-item active">{{$detail}}</li>
 
             </ol>
 
@@ -49,28 +49,11 @@
       <div class="card">
 
         <div class="card-header">
-
-          <h3 class="card-title">Klik</h3>
-
-
-
-          <div class="card-tools">
-
-            <button type="button" class="btn btn-tool" data-card-widget="collapse" data-toggle="tooltip" title="Collapse">
-
-              <i class="fas fa-minus"></i></button>
-
-            <button type="button" class="btn btn-tool" data-card-widget="remove" data-toggle="tooltip" title="Remove">
-
-              <i class="fas fa-times"></i></button>
-
-          </div>
-
+          <h5 class="card-titile"> {{$info->judul_info}} </h5>
         </div>
 
         <div class="card-body">
-
-
+          <p>{{$info->isi_info}} </p>
         </div>
 
         <!-- /.card-body -->
