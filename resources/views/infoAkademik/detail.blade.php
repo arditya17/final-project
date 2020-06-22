@@ -55,8 +55,12 @@
         <div class="card-body">
           <p>{{$info->isi_info}} </p>
 
-          <button type="submit" class="btn btn-primary"> Edit</button>
-          <button type="submit" class="btn btn-danger"> Delete</button>
+          <a href="{{ $info->id }}/edit" class="btn btn-primary"> Edit</a>
+          <form action="{{ $info->id }}" method="post" class="d-inline">
+            @method('delete')
+            @csrf
+            <button type="submit" class="btn btn-danger"> Delete</button>
+          </form>
           <a href="/info" class="card-link">Kembali</a>
         </div>
 

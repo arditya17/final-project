@@ -38,15 +38,15 @@ class InfoAkademik extends Controller
      */
     public function store(Request $request)
     {
-        // Info::create($request->all());
-        // return redirect('/info');
-        $info = new info;
-        $info->judul_info = $request->judul_info;
-        $info->isi_info = $request->isi_info;
-    
-        $info->save();
-
+        Info::create($request->all());
         return redirect('/info');
+        // $info = new info;
+        // $info->judul_info = $request->judul_info;
+        // $info->isi_info = $request->isi_info;
+    
+        // $info->save();
+
+        // return redirect('/info');
     }
 
     /**
@@ -68,7 +68,7 @@ class InfoAkademik extends Controller
      */
     public function edit(Info $info)
     {
-        //
+        return view('infoAkademik.edit', ['info' => $info]);
     }
 
     /**
@@ -80,7 +80,12 @@ class InfoAkademik extends Controller
      */
     public function update(Request $request, Info $info)
     {
-        //
+        $info::where('id', $info->id)
+        ->update([
+            'judul_info' => $request->judul_info,
+            'isi_info' => $request->isi_info
+        ]);
+        return redirect('/info');
     }
 
     /**
@@ -91,6 +96,7 @@ class InfoAkademik extends Controller
      */
     public function destroy(Info $info)
     {
-        //
+        Info::destroy($info->id);
+        return redirect('/info');
     }
 }

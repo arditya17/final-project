@@ -20,3 +20,6 @@ Route::get('/info','InfoAkademik@index');
 Route::get('/info/create','InfoAkademik@create');
 Route::get('/info/{info}','InfoAkademik@show');
 Route::post('/info','InfoAkademik@store');
+Route::delete('/info/{info}','InfoAkademik@destroy');
+Route::get('/info/{info}/edit','InfoAkademik@edit');
+Route::patch('/info/{info}','InfoAkademik@update');
