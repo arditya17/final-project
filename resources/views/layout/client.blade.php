@@ -39,7 +39,7 @@
 <body>
 
   <!-- ======= Header ======= -->
-  <header id="header">
+  <header id="header" class="fixed-top">
     <div class="container d-flex align-items-center">
 
       <div class="logo mr-auto">
@@ -50,31 +50,30 @@
 
       <nav class="nav-menu d-none d-lg-block">
         <ul>
-          <li class="active"><a href="index.html">Home</a></li>
-          <li><a href="#about">About Us</a></li>
-          <li><a href="#services">Services</a></li>
+          <li class="active"><a href="/home">Home</a></li>
+          <li><a href="#about">Magang</a></li>
+          <li><a href="#services">Fasilitas</a></li>
+          <li><a href="#features">Konsentrasi</a></li>
           <li><a href="#portfolio">Portfolio</a></li>
-          <li><a href="#team">Team</a></li>
-          <li class="drop-down"><a href="">Drop Down</a>
-            <ul>
-              <li><a href="#">Drop Down 1</a></li>
-              <li class="drop-down"><a href="#">Drop Down 2</a>
-                <ul>
-                  <li><a href="#">Deep Drop Down 1</a></li>
-                  <li><a href="#">Deep Drop Down 2</a></li>
-                  <li><a href="#">Deep Drop Down 3</a></li>
-                  <li><a href="#">Deep Drop Down 4</a></li>
-                  <li><a href="#">Deep Drop Down 5</a></li>
-                </ul>
-              </li>
-              <li><a href="#">Drop Down 3</a></li>
-              <li><a href="#">Drop Down 4</a></li>
-              <li><a href="#">Drop Down 5</a></li>
-            </ul>
-          </li>
-          <li><a href="#contact">Contact Us</a></li>
+          <li><a href="#direktorat">Direktorat</a></li>
+          <li class="get-started">
+          @if (Route::has('login'))
+            
+              @auth
+                  <a href="{{ url('/home') }}">Home</a>
+              @else
+                  <a href="{{ route('login') }}">Login</a>
 
-          <li class="get-started"><a href="#about">Get Started</a></li>
+          </li>
+          
+              <!-- @if (Route::has('register')) -->
+                      <!-- <a href="{{ route('register') }}">Register</a> -->
+                  <!-- @endif -->
+              @endauth
+            
+          @endif
+          
+          
         </ul>
       </nav><!-- .nav-menu -->
 

@@ -6,7 +6,12 @@ use Illuminate\Http\Request;
 
 class AdminController extends Controller
 {
-    public function dashboard()
+    public function __construct()
+    {
+        $this->middleware('auth');
+    }
+
+    public function index()
     {
         return view('admin.dashboard', ['judul' => 'Dashboard']);
     }
