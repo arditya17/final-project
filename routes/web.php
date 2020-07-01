@@ -15,7 +15,8 @@
 //     return view('welcome');
 // });
 
-Route::get('/','AdminController@dashboard');
+Route::get('/','ClientController@index');
+Route::get('/dashboard','AdminController@dashboard');
 Route::get('/info','InfoAkademik@index');
 Route::get('/info/create','InfoAkademik@create');
 Route::get('/info/{info}','InfoAkademik@show');
