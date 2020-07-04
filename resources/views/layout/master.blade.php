@@ -305,6 +305,37 @@
             </a>
 
             </li>
+
+            <li class="nav-item">
+
+            <a href="/mahasiswa" class="nav-link">
+
+              <i class="nav-icon fas fa-th"></i>
+
+              <p>
+
+                Mahasiswa
+
+              </p>
+
+            </a>
+
+            </li>
+            <li class="nav-item">
+
+              <a href="/perusahaan" class="nav-link">
+
+                <i class="nav-icon fas fa-th"></i>
+
+                <p>
+
+                  Perusahaan
+
+                </p>
+
+              </a>
+
+              </li>
         </ul>
 
       </nav>

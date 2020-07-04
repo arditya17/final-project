@@ -41,3 +41,21 @@ Route::post('/direktorat','DirektoratController@store');
 Route::delete('/direktorat/{direktorat}','DirektoratController@destroy');
 Route::get('/direktorat/{direktorat}/edit','DirektoratController@edit');
 Route::patch('/direktorat/{direktorat}','DirektoratController@update');
+
+// Mahasiswa
+Route::get('/mahasiswa','MahasiswaController@index');
+Route::get('/mahasiswa/create','MahasiswaController@create');
+Route::get('/mahasiswa/{mahasiswa}','MahasiswaController@show');
+Route::post('/mahasiswa','MahasiswaController@store');
+Route::delete('/mahasiswa/{mahasiswa}','MahasiswaController@destroy');
+Route::get('/mahasiswa/{mahasiswa}/edit','MahasiswaController@edit');
+Route::patch('/mahasiswa/{mahasiswa}','MahasiswaController@update');
+
+// Perusahaan
+Route::get('/perusahaan','PerusahaanController@index');
+Route::get('/perusahaan/create','PerusahaanController@create');
+Route::get('/perusahaan/{perusahaan}','PerusahaanController@show');
+Route::post('/perusahaan','PerusahaanController@store');
+Route::delete('/perusahaan/{perusahaan}','PerusahaanController@destroy');
+Route::get('/perusahaan/{perusahaan}/edit','PerusahaanController@edit');
+Route::patch('/perusahaan/{perusahaan}','PerusahaanController@update');
