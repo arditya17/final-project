@@ -15,7 +15,7 @@ class DirektoratController extends Controller
     public function index()
     {
         $direktorat = Direktorat::all();
-        return view('direktorat.index', ['judul' => 'Direktorat', 'direktorat' => $direktorat]);
+        return view('direktorat.index', ['judul' => 'direktorat', 'direktorat' => $direktorat]);
     }
 
     /**
@@ -48,7 +48,7 @@ class DirektoratController extends Controller
      */
     public function show($id)
     {
-        return view('direktorat.detail', ['detail' => 'Detail Direktorat','direktorat' => $direktorat]);
+        return view('direktorat.detail', ['detail' => 'Detail direktorat','direktorat' => $direktorat]);
     }
 
     /**
@@ -59,7 +59,7 @@ class DirektoratController extends Controller
      */
     public function edit($id)
     {
-        return view('direktorat.edit', ['direktorat' => $direktorat]);
+        //
     }
 
     /**
@@ -71,13 +71,7 @@ class DirektoratController extends Controller
      */
     public function update(Request $request, $id)
     {
-        $direktorat::where('id', $direktorat->id)
-        ->update([
-            'nama' => $request->nama,
-            'jabatan' => $request->jabatan,
-            'image' => $request->image
-        ]);
-        return redirect('/direktorat');
+        //
     }
 
     /**
@@ -88,7 +82,6 @@ class DirektoratController extends Controller
      */
     public function destroy($id)
     {
-        Direktorat::destroy($direktorat->id);
-        return redirect('/direktorat');
+        //
     }
 }

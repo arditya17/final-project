@@ -290,6 +290,21 @@
 
           </li>
 
+          <li class="nav-item">
+
+            <a href="/direktorat" class="nav-link">
+
+              <i class="nav-icon fas fa-th"></i>
+
+              <p>
+
+                Direktorat
+
+              </p>
+
+            </a>
+
+            </li>
         </ul>
 
       </nav>

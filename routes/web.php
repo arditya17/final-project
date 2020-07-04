@@ -32,3 +32,12 @@ Route::post('/konsentrasi','KonsentrasiController@store');
 Route::delete('/konsentrasi/{konsentrasi}','KonsentrasiController@destroy');
 Route::get('/konsentrasi/{konsentrasi}/edit','KonsentrasiController@edit');
 Route::patch('/konsentrasi/{konsentrasi}','KonsentrasiController@update');
+
+// Direktorat
+Route::get('/direktorat','DirektoratController@index');
+Route::get('/direktorat/create','DirektoratController@create');
+Route::get('/direktorat/{direktorat}','DirektoratController@show');
+Route::post('/direktorat','DirektoratController@store');
+Route::delete('/direktorat/{direktorat}','DirektoratController@destroy');
+Route::get('/direktorat/{direktorat}/edit','DirektoratController@edit');
+Route::patch('/direktorat/{direktorat}','DirektoratController@update');
