@@ -11,9 +11,7 @@
 |
 */
 
-Route::get('/', function () {
-    return view('client.index');
-});
+Route::get('/', 'ClientController@index');
 
 Auth::routes();
 // Route::get('/home', 'HomeController@index')->name('home');
@@ -26,4 +24,11 @@ Route::delete('/info/{info}','InfoAkademik@destroy');
 Route::get('/info/{info}/edit','InfoAkademik@edit');
 Route::patch('/info/{info}','InfoAkademik@update');
 
-
+// konsentrasi
+Route::get('/konsentrasi','KonsentrasiController@index');
+Route::get('/konsentrasi/create','KonsentrasiController@create');
+Route::get('/konsentrasi/{konsentrasi}','KonsentrasiController@show');
+Route::post('/konsentrasi','KonsentrasiController@store');
+Route::delete('/konsentrasi/{konsentrasi}','KonsentrasiController@destroy');
+Route::get('/konsentrasi/{konsentrasi}/edit','KonsentrasiController@edit');
+Route::patch('/konsentrasi/{konsentrasi}','KonsentrasiController@update');

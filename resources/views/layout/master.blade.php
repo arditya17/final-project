@@ -273,6 +273,23 @@
             </a>
 
           </li>
+
+          <li class="nav-item">
+
+            <a href="/konsentrasi" class="nav-link">
+
+              <i class="nav-icon fas fa-th"></i>
+
+              <p>
+
+                Konsentrasi
+
+              </p>
+
+            </a>
+
+          </li>
+
         </ul>
 
       </nav>

@@ -179,18 +179,18 @@
     <!-- ======= Features Section ======= -->
     <section id="features" class="features section-bg">
       <div class="container">
-
+    
         <div class="section-title">
-          <h2 data-aos="fade-in">Features</h2>
-          <p data-aos="fade-in">Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p>
+          <h2 data-aos="fade-in">Konsentrasi</h2>
+          <p data-aos="fade-in">Terdapat 3 Konsentrasi dalam Prodi D3 Teknik Informatika Universitas Amikom ini.</p>
         </div>
 
-        <div class="row content">
+        <!-- <div class="row content">
           <div class="col-md-5" data-aos="fade-right">
             <img src="assets/img/features-1.svg" class="img-fluid" alt="">
           </div>
           <div class="col-md-7 pt-4" data-aos="fade-left">
-            <h3>Voluptatem dignissimos provident quasi corporis voluptates sit assumenda.</h3>
+            
             <p class="font-italic">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
               magna aliqua.
@@ -199,24 +199,27 @@
               <li><i class="icofont-check"></i> Ullamco laboris nisi ut aliquip ex ea commodo consequat.</li>
               <li><i class="icofont-check"></i> Duis aute irure dolor in reprehenderit in voluptate velit.</li>
             </ul>
-          </div>
-        </div>
+          </div> -->
+          
 
         <div class="row content">
           <div class="col-md-5 order-1 order-md-2" data-aos="fade-left">
             <img src="assets/img/features-2.svg" class="img-fluid" alt="">
           </div>
           <div class="col-md-7 pt-5 order-2 order-md-1" data-aos="fade-right">
-            <h3>Corporis temporibus maiores provident</h3>
-            <p class="font-italic">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
-              magna aliqua.
-            </p>
+            @foreach ($judul1 as $j)
+            <h3>{{$j->judul}}</h3>
+            @endforeach
+            @foreach ($deskripsi_1 as $d1)
             <p>
-              Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
-              velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-              culpa qui officia deserunt mollit anim id est laborum
+              {{$d1->deskripsi_1}}
             </p>
+            @endforeach
+            @foreach ($deskripsi_2 as $d2)
+            <p>
+              {{$d2->deskripsi_2}}
+            </p>
+            @endforeach
           </div>
         </div>
 
@@ -225,13 +228,19 @@
             <img src="assets/img/features-3.svg" class="img-fluid" alt="">
           </div>
           <div class="col-md-7 pt-5" data-aos="fade-left">
-            <h3>Sunt consequatur ad ut est nulla consectetur reiciendis animi voluptas</h3>
-            <p>Cupiditate placeat cupiditate placeat est ipsam culpa. Delectus quia minima quod. Sunt saepe odit aut quia voluptatem hic voluptas dolor doloremque.</p>
-            <ul>
-              <li><i class="icofont-check"></i> Ullamco laboris nisi ut aliquip ex ea commodo consequat.</li>
-              <li><i class="icofont-check"></i> Duis aute irure dolor in reprehenderit in voluptate velit.</li>
-              <li><i class="icofont-check"></i> Facilis ut et voluptatem aperiam. Autem soluta ad fugiat.</li>
-            </ul>
+            @foreach ($judul2 as $j)
+            <h3>{{$j->judul}}</h3>
+            @endforeach
+            @foreach ($deskripsi_3 as $d1)
+            <p>
+              {{$d1->deskripsi_1}}
+            </p>
+            @endforeach
+            @foreach ($deskripsi_4 as $d2)
+            <p>
+              {{$d2->deskripsi_2}}
+            </p>
+            @endforeach
           </div>
         </div>
 
@@ -240,16 +249,19 @@
             <img src="assets/img/features-4.svg" class="img-fluid" alt="">
           </div>
           <div class="col-md-7 pt-5 order-2 order-md-1" data-aos="fade-right">
-            <h3>Quas et necessitatibus eaque impedit ipsum animi consequatur incidunt in</h3>
-            <p class="font-italic">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
-              magna aliqua.
-            </p>
-            <p>
-              Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
-              velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-              culpa qui officia deserunt mollit anim id est laborum
-            </p>
+          @foreach ($judul3 as $j)
+          <h3>{{$j->judul}}</h3>
+          @endforeach
+          @foreach ($deskripsi_5 as $d1)
+          <p>
+            {{$d1->deskripsi_1}}
+          </p>
+          @endforeach
+          @foreach ($deskripsi_6 as $d2)
+          <p>
+            {{$d2->deskripsi_2}}
+          </p>
+          @endforeach
           </div>
         </div>
 
@@ -257,7 +269,7 @@
     </section><!-- End Features Section -->
 
     <!-- ======= Portfolio Section ======= -->
-    <section id="portfolio" class="portfolio section-bg">
+    <!-- <section id="portfolio" class="portfolio section-bg">
       <div class="container">
 
         <div class="section-title">
@@ -406,7 +418,7 @@
 
         </div>
 
-      </div>
+      </div> -->
     </section><!-- End Portfolio Section -->
 
     <!-- ======= Team Section ======= -->
