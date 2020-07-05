@@ -17,8 +17,8 @@ Route::get('/', 'ClientController@index');
 // Route::post('/login2', 'AuthController@postlogin')->name('login2');
 // Route::get('/logout', 'AuthController@logout')->name('logout');
 Auth::routes();
-Route::get('/berandaMahasiswa', 'AkunController@mahasiswa')->name('adminHome');
-Route::get('/berandaPerusahaan', 'AkunController@perusahaan')->name('perusahaan');
+Route::get('/berandaMahasiswa', 'MagangController@index3')->name('adminHome');
+Route::get('/berandaPerusahaan', 'MagangController@index2')->name('perusahaan');
 // Route::get('/home', 'HomeController@index')->name('home');
 Route::get('/home','AdminController@index')->name('home')->middleware('role');
 Route::get('/info','InfoAkademik@index');
@@ -64,3 +64,22 @@ Route::post('/perusahaan','PerusahaanController@store');
 Route::delete('/perusahaan/{perusahaan}','PerusahaanController@destroy');
 Route::get('/perusahaan/{perusahaan}/edit','PerusahaanController@edit');
 Route::patch('/perusahaan/{perusahaan}','PerusahaanController@update');
+
+// magang
+Route::get('/magang','MagangController@index');
+Route::get('/magang/create','MagangController@create');
+Route::get('/magang/{magang}','MagangController@show');
+Route::post('/magang','MagangController@store');
+Route::delete('/magang/{magang}','MagangController@destroy');
+Route::get('/magang/{magang}/edit','MagangController@edit');
+Route::patch('/magang/{magang}','MagangController@update');
+
+// editPerusahaan
+Route::get('/berandaPerusahaan/{magang}','MagangController@show2');
+Route::get('/berandaPerusahaan/{magang}/edit','MagangController@edit2');
+Route::patch('/berandaPerusahaan/{magang}','MagangController@update2');
+
+// editPerusahaan
+Route::get('/berandaMahasiswa/{magang}','MagangController@show3');
+Route::get('/berandaMahasiswa/{magang}/edit','MagangController@edit3');
+Route::patch('/berandaMahasiswa/{magang}','MagangController@update3');

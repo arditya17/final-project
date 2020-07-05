@@ -50,12 +50,12 @@
 
       <nav class="nav-menu d-none d-lg-block">
         <ul>
-          <li class="active"><a href="/home">Home</a></li>
-          <li><a href="#about">Magang</a></li>
-          <li><a href="#services">Fasilitas</a></li>
-          <li><a href="#features">Konsentrasi</a></li>
-          <li><a href="#portfolio">Portfolio</a></li>
-          <li><a href="#direktorat">Direktorat</a></li>
+          <li class="active"><a href="/">Home</a></li>
+          <li><a href="/">Magang</a></li>
+          <li><a href="/">Fasilitas</a></li>
+          <li><a href="/">Konsentrasi</a></li>
+          <li><a href="/">Portfolio</a></li>
+          <li><a href="/">Direktorat</a></li>
           <li class="get-started">
           @if (Route::has('login'))
             

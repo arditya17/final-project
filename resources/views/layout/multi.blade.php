@@ -154,13 +154,7 @@
 
     <a href="../../index3.html" class="brand-link">
 
-      <img src="/AdminLte/img/AdminLTELogo.png"
-
-           alt="AdminLTE Logo"
-
-           class="brand-image img-circle elevation-3"
-
-           style="opacity: .8">
+     
 
       <span class="brand-text font-weight-light">Panduan Akademik</span>
 
@@ -174,21 +168,6 @@
 
       <!-- Sidebar user (optional) -->
 
-      <div class="user-panel mt-3 pb-3 mb-3 d-flex">
-
-        <div class="image">
-
-          <img src="/AdminLte/img/user2-160x160.jpg" class="img-circle elevation-2" alt="User Image">
-
-        </div>
-
-        <div class="info">
-
-          <a href="#" class="d-block">Ifan Wahyu Abdillah</a>
-
-        </div>
-
-      </div>
 
 
 
@@ -202,149 +181,16 @@
 
                with font-awesome or any other icon font library -->
 
-          <li class="nav-item has-treeview">
-
-            <a href="/home" class="nav-link">
-
-              <i class="nav-icon fas fa-tachometer-alt"></i>
-
-              <p>
-
-                Dashboard
-
-                <i class="right fas fa-angle-left"></i>
-
-              </p>
-
-            </a>
-
-          </li>
-
-          <li class="nav-item">
-
-            <a href="/info" class="nav-link">
-
-              <i class="nav-icon fas fa-th"></i>
-
-              <p>
-
-                Info Akademik
-
-                <span class="right badge badge-danger">New</span>
-
-              </p>
-
-            </a>
-
-          </li>
-
-          <li class="nav-item">
-
-            <a href="#" class="nav-link">
-
-              <i class="nav-icon fas fa-th"></i>
-
-              <p>
-
-                Peraturan Akademik
-
-              </p>
-
-            </a>
-
-          </li>
-
-          <li class="nav-item has-treeview">
-
-            <a href="#" class="nav-link">
-
-              <i class="nav-icon fas fa-copy"></i>
-
-              <p>
-
-                Peraturan Akademik
-
-                <i class="fas fa-angle-left right"></i>
-
-                <span class="badge badge-info right">6</span>
-
-              </p>
-
-            </a>
-
-          </li>
-
-          <li class="nav-item">
-
-            <a href="/konsentrasi" class="nav-link">
-
-              <i class="nav-icon fas fa-th"></i>
-
-              <p>
-
-                Konsentrasi
-
-              </p>
-
-            </a>
-
-          </li>
-
-          <li class="nav-item">
-
-            <a href="/direktorat" class="nav-link">
-
-              <i class="nav-icon fas fa-th"></i>
-
-              <p>
-
-                Direktorat
-
-              </p>
-
-            </a>
-
-            </li>
-
+          
             <li class="nav-item">
 
-            <a href="/mahasiswa" class="nav-link">
-
-              <i class="nav-icon fas fa-th"></i>
-
-              <p>
-
-                Mahasiswa
-
-              </p>
-
-            </a>
-
-            </li>
-            <li class="nav-item">
-
-              <a href="/perusahaan" class="nav-link">
+            <a href="/berandaPerusahaan" class="nav-link">
 
                 <i class="nav-icon fas fa-th"></i>
 
                 <p>
 
-                  Perusahaan
-
-                </p>
-
-              </a>
-
-              </li>
-            <li class="nav-item">
-
-              <a href="/magang" class="nav-link">
-
-                <i class="nav-icon fas fa-th"></i>
-
-                <p>
-
-                  Magang
+                  Daftar Magang
 
                 </p>
 

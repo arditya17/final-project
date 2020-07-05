@@ -10,7 +10,6 @@ class AkunController extends Controller
     {
         return view('akun.mahasiswa');
     }
-
     public function perusahaan()
     {
         return view('akun.perusahaan');
