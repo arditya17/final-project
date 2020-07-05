@@ -20,33 +20,38 @@ Auth::routes();
 Route::get('/berandaMahasiswa', 'MagangController@index3')->name('adminHome');
 Route::get('/berandaPerusahaan', 'MagangController@index2')->name('perusahaan');
 // Route::get('/home', 'HomeController@index')->name('home');
-Route::get('/home','AdminController@index')->name('home')->middleware('role');
-Route::get('/info','InfoAkademik@index');
-Route::get('/info/create','InfoAkademik@create');
-Route::get('/info/{info}','InfoAkademik@show');
-Route::post('/info','InfoAkademik@store');
-Route::delete('/info/{info}','InfoAkademik@destroy');
-Route::get('/info/{info}/edit','InfoAkademik@edit');
-Route::patch('/info/{info}','InfoAkademik@update');
+
+Route::get('/home', 'AdminController@index')->name('home');
+Route::get('/info', 'InfoAkademik@index');
+Route::get('/info/create', 'InfoAkademik@create');
+Route::get('/info/{info}', 'InfoAkademik@show');
+Route::post('/info', 'InfoAkademik@store');
+Route::delete('/info/{info}', 'InfoAkademik@destroy');
+Route::get('/info/{info}/edit', 'InfoAkademik@edit');
+Route::patch('/info/{info}', 'InfoAkademik@update');
+
+ // Fasilitas
+Route::get('/fasilitas', 'FasilitasController@index');
+Route::get('/fasilitas/create', 'FasilitasController@create');
+Route::get('/fasilitas/{fasilitas}', 'FasilitasController@show');
 
 // konsentrasi
-Route::get('/konsentrasi','KonsentrasiController@index');
-Route::get('/konsentrasi/create','KonsentrasiController@create');
-Route::get('/konsentrasi/{konsentrasi}','KonsentrasiController@show');
-Route::post('/konsentrasi','KonsentrasiController@store');
-Route::delete('/konsentrasi/{konsentrasi}','KonsentrasiController@destroy');
-Route::get('/konsentrasi/{konsentrasi}/edit','KonsentrasiController@edit');
-Route::patch('/konsentrasi/{konsentrasi}','KonsentrasiController@update');
+Route::get('/konsentrasi', 'KonsentrasiController@index');
+Route::get('/konsentrasi/create', 'KonsentrasiController@create');
+Route::get('/konsentrasi/{konsentrasi}', 'KonsentrasiController@show');
+Route::post('/konsentrasi', 'KonsentrasiController@store');
+Route::delete('/konsentrasi/{konsentrasi}', 'KonsentrasiController@destroy');
+Route::get('/konsentrasi/{konsentrasi}/edit', 'KonsentrasiController@edit');
+Route::patch('/konsentrasi/{konsentrasi}', 'KonsentrasiController@update');
 
 // Direktorat
-Route::get('/direktorat','DirektoratController@index');
-Route::get('/direktorat/create','DirektoratController@create');
-Route::get('/direktorat/{direktorat}','DirektoratController@show');
-Route::post('/direktorat','DirektoratController@store');
-Route::delete('/direktorat/{direktorat}','DirektoratController@destroy');
-Route::get('/direktorat/{direktorat}/edit','DirektoratController@edit');
-Route::patch('/direktorat/{direktorat}','DirektoratController@update');
-
+Route::get('/direktorat', 'DirektoratController@index');
+Route::get('/direktorat/create', 'DirektoratController@create');
+Route::get('/direktorat/{direktorat}', 'DirektoratController@show');
+Route::post('/direktorat', 'DirektoratController@store');
+Route::delete('/direktorat/{direktorat}', 'DirektoratController@destroy');
+Route::get('/direktorat/{direktorat}/edit', 'DirektoratController@edit');
+Route::patch('/direktorat/{direktorat}', 'DirektoratController@update');
 // Mahasiswa
 Route::get('/mahasiswa','MahasiswaController@index');
 Route::get('/mahasiswa/create','MahasiswaController@create');

@@ -36,7 +36,16 @@ class DirektoratController extends Controller
      */
     public function store(Request $request)
     {
-        Direktorat::create($request->all());
+        $file = $request->image;
+        $file_name = $file->getClientOriginalName();
+
+        $direktorat = Direktorat::create([
+            'nama' => $request->nama,
+            'jabatan' => $request->jabatan,
+            'image' => 'public/uploads' . $file_name
+        ]);
+
+        $file->move('public/uploads', $file_name);
         return redirect('/direktorat');
     }
 
@@ -46,9 +55,9 @@ class DirektoratController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function show($id)
+    public function show(Direktorat $direktorat)
     {
-        return view('direktorat.detail', ['detail' => 'Detail direktorat','direktorat' => $direktorat]);
+        return view('direktorat.detail', ['detail' => 'Detail direktorat', 'direktorat' => $direktorat]);
     }
 
     /**
@@ -57,9 +66,9 @@ class DirektoratController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function edit($id)
+    public function edit(Direktorat $direktorat)
     {
-        //
+        return view('direktorat.edit', ['direktorat' => $direktorat]);
     }
 
     /**
@@ -69,9 +78,20 @@ class DirektoratController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, $id)
+    public function update(Request $request, Direktorat $direktorat)
     {
-        //
+        $file = $request->image;
+        $file_name = $file->getClientOriginalName();
+
+        $direktorat::where('id', $direktorat->id)
+            ->update([
+                'nama' => $request->nama,
+                'jabatan' => $request->jabatan,
+                'image' => 'public/uploads' . $file_name
+            ]);
+
+        $file->move('public/uploads', $file_name);
+        return redirect('/direktorat');
     }
 
     /**
@@ -80,8 +100,9 @@ class DirektoratController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function destroy($id)
+    public function destroy(Direktorat $direktorat)
     {
-        //
+        Direktorat::destroy($direktorat->id);
+        return redirect('/direktorat');
     }
 }
