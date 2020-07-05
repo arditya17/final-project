@@ -49,10 +49,11 @@
       <div class="card">
 
         <div class="card-header">
-          <h5 class="card-titile"> {{$direktorat}} </h5>
+          <h5 class="card-titile"> {{$direktorat->nama}} </h5>
         </div>
 
         <div class="card-body">
+        <img src="{{ URL::asset('storage/public/app/uploads/image.jpg') }}" />
           <p>{{$direktorat->jabatan}} </p>
           <a href="{{ $direktorat->id }}/edit" class="btn btn-primary"> Edit</a>
           <form action="{{ $direktorat->id }}" method="post" class="d-inline">

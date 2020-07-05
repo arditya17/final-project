@@ -68,7 +68,7 @@
 </div>
 
         <div class="card-body">
-        <form method="post" action="/direktorat/ {{$direktorat->id}}"> 
+        <form method="post" action="/direktorat/ {{$direktorat->id}}" enctype="multipart/form-data"> 
         @method ('patch')
         @csrf
         <div class="form-group">
@@ -81,6 +81,11 @@
             <label for="deskripsi">Jabatan</label>
             <input type="text" class="form-control" id="jabatan" name="jabatan" value="{{
                 $direktorat->jabatan}}">
+        </div>
+
+        <div class="form-group">
+            <label for="deskripsi">Foto Profil</label>
+            <input type="file" name="image" />
         </div>
 
         <button type="submit" class="btn btn-primary mb-2">Ubah Data</button>
