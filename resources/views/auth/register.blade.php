@@ -28,6 +28,16 @@
                         @enderror
                     </div>
                     <div class="form-group">
+                        <label for="role"><i class="zmdi zmdi-role"></i></label>
+                        <select name="role" id="role" class="form-control" required>
+                                <option value="">Pilih Jenis Akun</option>
+                                <option value="mahasiswa">Mahasiswa</option>
+                                <option value="perusahaan">Perusahaan</option>
+                        </select>
+                        <!-- <input id="role" type="role" placeholder="Your role" class=" @error('role') is-invalid @enderror" name="role" value="{{ old('role') }}" required autocomplete="role"> -->
+
+                    </div>
+                    <div class="form-group">
                         <label for="pass"><i class="zmdi zmdi-lock"></i></label>
                         <input id="password" type="password" placeholder="Password" class="@error('password') is-invalid @enderror" name="password" required autocomplete="new-password">
                         @error('password')

@@ -13,9 +13,14 @@
 
 Route::get('/', 'ClientController@index');
 
+// Route::get('/login', 'AuthController@login')->name('login');
+// Route::post('/login2', 'AuthController@postlogin')->name('login2');
+// Route::get('/logout', 'AuthController@logout')->name('logout');
 Auth::routes();
+Route::get('/berandaMahasiswa', 'AkunController@mahasiswa')->name('adminHome');
+Route::get('/berandaPerusahaan', 'AkunController@perusahaan')->name('perusahaan');
 // Route::get('/home', 'HomeController@index')->name('home');
-Route::get('/home','AdminController@index')->name('home');
+Route::get('/home','AdminController@index')->name('home')->middleware('role');
 Route::get('/info','InfoAkademik@index');
 Route::get('/info/create','InfoAkademik@create');
 Route::get('/info/{info}','InfoAkademik@show');

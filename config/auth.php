@@ -46,6 +46,35 @@ return [
             'provider' => 'users',
             'hash' => false,
         ],
+        'admin' => [
+            'driver' => 'session',
+            'provider' => 'admin',
+        ],
+
+        'apiadmin' => [
+            'driver' => 'token',
+            'provider' => 'admin',
+        ],
+
+        'mhs' => [
+            'driver' => 'session',
+            'provider' => 'mhs',
+        ],
+
+        'apimhs' => [
+          'driver' => 'token',
+          'provider' => 'mhs',
+        ],
+
+        'psh' => [
+            'driver' => 'session',
+            'provider' => 'psh',
+        ],
+
+        'apipsh' => [
+          'driver' => 'token',
+          'provider' => 'psh',
+        ],
     ],
 
     /*
@@ -70,7 +99,18 @@ return [
             'driver' => 'eloquent',
             'model' => App\User::class,
         ],
-
+        'admin' => [
+            'driver' => 'eloquent',
+            'model' => App\User::class,
+        ],
+        'mhs' => [
+            'driver' => 'eloquent',
+            'model' => App\User::class,
+        ],
+        'psh' => [
+            'driver' => 'eloquent',
+            'model' => App\User::class,
+        ],
         // 'users' => [
         //     'driver' => 'database',
         //     'table' => 'users',
