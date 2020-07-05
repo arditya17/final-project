@@ -50,28 +50,37 @@
 
       <nav class="nav-menu d-none d-lg-block">
         <ul>
-          <li class="active"><a href="/">Home</a></li>
-          <li><a href="/">Magang</a></li>
-          <li><a href="/">Fasilitas</a></li>
-          <li><a href="/">Konsentrasi</a></li>
-          <li><a href="/">Portfolio</a></li>
-          <li><a href="/">Direktorat</a></li>
+          <li class="active"><a href="/home">Home</a></li>
+          <li><a href="/home/">Magang</a></li>
+          <li><a href="/home/">Fasilitas</a></li>
+          <li><a href="/home/">Konsentrasi</a></li>
+          <li><a href="/home/">Direktorat</a></li>
           <li class="get-started">
-          @if (Route::has('login'))
-            
-              @auth
-                  <a href="{{ url('/home') }}">Home</a>
-              @else
-                  <a href="{{ route('login') }}">Login</a>
+          @guest
+                <li class="nav-item">
+                    <a class="nav-link" href="{{ route('login') }}">{{ __('Login') }}</a>
+                </li>
+                @if (Route::has('register'))
+                    <li class="nav-item">
+                        <a class="nav-link" href="{{ route('register') }}">{{ __('Register') }}</a>
+                    </li>
+                @endif
+            @else
+                
 
-          </li>
-          
-              <!-- @if (Route::has('register')) -->
-                      <!-- <a href="{{ route('register') }}">Register</a> -->
-                  <!-- @endif -->
-              @endauth
-            
-          @endif
+                   
+                        <a  href="{{ route('logout') }}"
+                            onclick="event.preventDefault();
+                                            document.getElementById('logout-form').submit();">
+                            {{ __('Logout') }}
+                        </a>
+
+                        <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
+                            @csrf
+                        </form>
+                    </div>
+                
+            @endguest      
           
           
         </ul>

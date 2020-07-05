@@ -280,6 +280,26 @@
             </li>
           </ul>
 
+
+
+            <li class="nav-item">
+
+              <a href="/magang" class="nav-link">
+
+                <i class="nav-icon fas fa-th"></i>
+
+                <p>
+
+                  Magang
+
+                </p>
+
+              </a>
+
+              </li>
+        </ul>
+
+
         </nav>
 
         <!-- /.sidebar-menu -->
