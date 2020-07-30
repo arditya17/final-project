@@ -382,8 +382,8 @@
       </div> -->
   </section><!-- End Portfolio Section -->
 
-  <!-- ======= Team Section ======= -->
-  <section id="direktorat" class="team section-bg">
+ <!-- ======= Team Section ======= -->
+ <section id="direktorat" class="team section-bg">
     <div class="container">
 
       <div class="section-title">
@@ -394,9 +394,9 @@
       <div class="row">
         <div class="col-xl-3 col-lg-4 col-md-6">
           <div class="member" data-aos="fade-up">
-            <div class="pic"><img src="assets/img/team/daak.jpg" height="267px" alt=""></div>
-            <h4>Direktorat Administrasi Akademik dan Kemahasiswaan</h4>
-            <span>Direktorat ini berkaitan secara langsung dengan kegiatan akademik mahasiswa dan administrasi.</span>
+            <div class="pic"><img src="assets/img/team/direktur_ic.jpg" height="267px" alt=""></div>
+            <h4>Direktur Innovation Center</h4>
+            <span>Drs. Nasro Asiri, M. Kom</span>
             <div class="social">
               <a href=""><i class="icofont-twitter"></i></a>
               <a href=""><i class="icofont-facebook"></i></a>
@@ -408,9 +408,9 @@
 
         <div class="col-xl-3 col-lg-4 col-md-6">
           <div class="member" data-aos="fade-up" data-aos-delay="100">
-            <div class="pic"><img src="assets/img/team/dpk.jpg" height="267px" alt=""></div>
-            <h4>Direktorat Perencanaan Keuangan</h4>
-            <span>Direktorat ini menginformasikan terkait dengan biaya kuliah, danmengolah keuangan yang berasal dari mahasiswa untuk kegiatan-kegiatan kemahasiswaan.</span>
+            <div class="pic"><img src="assets/img/team/direktur_pascasarjana.jpg" height="267px" alt=""></div>
+            <h4>Direktur Pasca Sarjana</h4>
+            <span>Drs. Kusrini, M. Kom</span>
             <div class="social">
               <a href=""><i class="icofont-twitter"></i></a>
               <a href=""><i class="icofont-facebook"></i></a>
@@ -422,9 +422,9 @@
 
         <div class="col-xl-3 col-lg-4 col-md-6">
           <div class="member" data-aos="fade-up" data-aos-delay="200">
-            <div class="pic"><img src="assets/img/team/kmhs.png" height="267px" alt=""></div>
-            <h4>Direktorat Kemahasiswaan</h4>
-            <span>Direktorat ini mengelola setiap kegiatan kemahasiswaan yang dilakukan oleh seluruh Lembaga Mahasiswa</span>
+            <div class="pic"><img src="assets/img/team/direktur_penelitian.jpeg" height="267px" alt=""></div>
+            <h4>Direktur Penelitian</h4>
+            <span>Dr. Abidarin Rosidi, M. Ma</span>
             <div class="social">
               <a href=""><i class="icofont-twitter"></i></a>
               <a href=""><i class="icofont-facebook"></i></a>
@@ -436,9 +436,9 @@
 
         <div class="col-xl-3 col-lg-4 col-md-6">
           <div class="member" data-aos="fade-up" data-aos-delay="300">
-            <div class="pic"><img src="assets/img/team/ic.png" height="267px" alt=""></div>
-            <h4>Direktorat Innovation Center</h4>
-            <span>Direktorat ini mengelola setiap sistem di Universitas AMIKOM Yogyakarta, seperti contohnya email students dan aplikasi amikom one.</span>
+            <div class="pic"><img src="assets/img/team/pengabdian_masyarakat.jpeg" height="267px" alt=""></div>
+            <h4>Direktur Pengabdian Masyarakat</h4>
+            <span>Heri Sismoro, M. Kom</span>
             <div class="social">
               <a href=""><i class="icofont-twitter"></i></a>
               <a href=""><i class="icofont-facebook"></i></a>
@@ -451,6 +451,7 @@
 
     </div>
   </section><!-- End Team Section -->
+
 
 
 
