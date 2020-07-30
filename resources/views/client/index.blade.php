@@ -11,8 +11,8 @@
     <div class="row d-flex align-items-center"">
       <div class=" col-lg-6 py-5 py-lg-0 order-2 order-lg-1" data-aos="fade-right">
       <h1>Website Resmi Panduan Akademik Amikom Jogja</h1>
-      <h2>We are team of talanted designers making websites with Bootstrap</h2>
-      <a href="#about" class="btn-get-started scrollto">Get Started</a>
+      <h2>Daftarkan perusahaan anda untuk menerima mahasiswa magang</h2>
+      <a href="/register" class="btn-get-started scrollto">Daftar</a>
     </div>
     <div class="col-lg-6 order-1 order-lg-2 hero-img" data-aos="fade-left">
       <img src="assets/img/hero-img.png" class="img-fluid" alt="">
@@ -24,52 +24,7 @@
 
 <main id="main">
 
-  <!-- ======= Clients Section ======= -->
-  <section id="clients" class="clients section-bg">
-    <div class="container">
 
-      <div class="row no-gutters clients-wrap clearfix wow fadeInUp">
-
-        <div class="col-lg-2 col-md-4 col-6">
-          <div class="client-logo">
-            <img src="assets/img/clients/client-1.png" class="img-fluid" alt="" data-aos="flip-right">
-          </div>
-        </div>
-
-        <div class="col-lg-2 col-md-4 col-6">
-          <div class="client-logo">
-            <img src="assets/img/clients/client-2.png" class="img-fluid" alt="" data-aos="flip-right" data-aos-delay="100">
-          </div>
-        </div>
-
-        <div class="col-lg-2 col-md-4 col-6">
-          <div class="client-logo">
-            <img src="assets/img/clients/client-3.png" class="img-fluid" alt="" data-aos="flip-right" data-aos-delay="200">
-          </div>
-        </div>
-
-        <div class="col-lg-2 col-md-4 col-6">
-          <div class="client-logo">
-            <img src="assets/img/clients/client-4.png" class="img-fluid" alt="" data-aos="flip-right" data-aos-delay="300">
-          </div>
-        </div>
-
-        <div class="col-lg-2 col-md-4 col-6">
-          <div class="client-logo">
-            <img src="assets/img/clients/client-5.png" class="img-fluid" alt="" data-aos="flip-right" data-aos-delay="400">
-          </div>
-        </div>
-
-        <div class="col-lg-2 col-md-4 col-6">
-          <div class="client-logo">
-            <img src="assets/img/clients/client-6.png" class="img-fluid" alt="" data-aos="flip-right" data-aos-delay="500">
-          </div>
-        </div>
-
-      </div>
-
-    </div>
-  </section><!-- End Clients Section -->
 
   <!-- ======= About Section ======= -->
   <section id="about" class="about section-bg">
@@ -79,32 +34,34 @@
         <div class="image col-xl-5 d-flex align-items-stretch justify-content-center justify-content-lg-start"></div>
         <div class="col-xl-7 pl-0 pl-lg-5 pr-lg-1 d-flex align-items-stretch">
           <div class="content d-flex flex-column justify-content-center">
-            <h3 data-aos="fade-in" data-aos-delay="100">Voluptatem dignissimos provident quasi</h3>
+            <h3 data-aos="fade-in" data-aos-delay="100">Magang Dengan 16SKS</h3>
             <p data-aos="fade-in">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Duis aute irure dolor in reprehenderit
+              Ikuti magang untuk mendapatkan pengalaman yang sangat berharga dengan perusahaan perusahaan ternama
             </p>
             <div class="row">
               <div class="col-md-6 icon-box" data-aos="fade-up">
                 <i class="bx bx-receipt"></i>
-                <h4><a href="#">Corporis voluptates sit</a></h4>
-                <p>Consequuntur sunt aut quasi enim aliquam quae harum pariatur laboris nisi ut aliquip</p>
+                <h4><a href="#">Sertifikat</a></h4>
+                <p>Mendapatkan sertifikat Universitas dari pihak kampus maupun perusahaan</p>
               </div>
               <div class="col-md-6 icon-box" data-aos="fade-up" data-aos-delay="100">
                 <i class="bx bx-cube-alt"></i>
-                <h4><a href="#">Ullamco laboris nisi</a></h4>
-                <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt</p>
+                <h4><a href="#">Menambah Pengalaman</a></h4>
+                <p>Menambah daftar pengalaman dalam catatan CV</p>
               </div>
               <div class="col-md-6 icon-box" data-aos="fade-up" data-aos-delay="200">
                 <i class="bx bx-images"></i>
-                <h4><a href="#">Labore consequatur</a></h4>
-                <p>Aut suscipit aut cum nemo deleniti aut omnis. Doloribus ut maiores omnis facere</p>
+                <h4><a href="#">Moment</a></h4>
+                <p>Memiliki moment tak terlupakan dengan rekan kerta</p>
               </div>
               <div class="col-md-6 icon-box" data-aos="fade-up" data-aos-delay="300">
                 <i class="bx bx-shield"></i>
-                <h4><a href="#">Beatae veritatis</a></h4>
-                <p>Expedita veritatis consequuntur nihil tempore laudantium vitae denat pacta</p>
+                <h4><a href="#">Bertanggung Jawab</a></h4>
+                <p>Mampu meningkatkan sifat tanggung jawab dalam diri</p>
               </div>
             </div>
+          <br>
+          <a href="/register"> <button type="button" class="btn btn-warning" data-aos="fade-up" data-aos-delay="300">Daftar</button></a>
           </div><!-- End .content-->
         </div>
       </div>
@@ -430,16 +387,16 @@
     <div class="container">
 
       <div class="section-title">
-        <h2 data-aos="fade-in">Team</h2>
-        <p data-aos="fade-in">Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p>
+        <h2 data-aos="fade-in">Direktorat</h2>
+        <p data-aos="fade-in">Universitas AMIKOM Yogyakarta memiliki beberapa direktorat yang dibawah pimpinan Wakil Rektor secara langsung yang berkaitan dengannya. </p>
       </div>
 
       <div class="row">
         <div class="col-xl-3 col-lg-4 col-md-6">
           <div class="member" data-aos="fade-up">
-            <div class="pic"><img src="assets/img/team/team-1.jpg" alt=""></div>
-            <h4>Walter White</h4>
-            <span>Chief Executive Officer</span>
+            <div class="pic"><img src="assets/img/team/daak.jpg" height="267px" alt=""></div>
+            <h4>Direktorat Administrasi Akademik dan Kemahasiswaan</h4>
+            <span>Direktorat ini berkaitan secara langsung dengan kegiatan akademik mahasiswa dan administrasi.</span>
             <div class="social">
               <a href=""><i class="icofont-twitter"></i></a>
               <a href=""><i class="icofont-facebook"></i></a>
@@ -451,9 +408,9 @@
 
         <div class="col-xl-3 col-lg-4 col-md-6">
           <div class="member" data-aos="fade-up" data-aos-delay="100">
-            <div class="pic"><img src="assets/img/team/team-2.jpg" alt=""></div>
-            <h4>Sarah Jhinson</h4>
-            <span>Product Manager</span>
+            <div class="pic"><img src="assets/img/team/dpk.jpg" height="267px" alt=""></div>
+            <h4>Direktorat Perencanaan Keuangan</h4>
+            <span>Direktorat ini menginformasikan terkait dengan biaya kuliah, danmengolah keuangan yang berasal dari mahasiswa untuk kegiatan-kegiatan kemahasiswaan.</span>
             <div class="social">
               <a href=""><i class="icofont-twitter"></i></a>
               <a href=""><i class="icofont-facebook"></i></a>
@@ -465,9 +422,9 @@
 
         <div class="col-xl-3 col-lg-4 col-md-6">
           <div class="member" data-aos="fade-up" data-aos-delay="200">
-            <div class="pic"><img src="assets/img/team/team-3.jpg" alt=""></div>
-            <h4>William Anderson</h4>
-            <span>CTO</span>
+            <div class="pic"><img src="assets/img/team/kmhs.png" height="267px" alt=""></div>
+            <h4>Direktorat Kemahasiswaan</h4>
+            <span>Direktorat ini mengelola setiap kegiatan kemahasiswaan yang dilakukan oleh seluruh Lembaga Mahasiswa</span>
             <div class="social">
               <a href=""><i class="icofont-twitter"></i></a>
               <a href=""><i class="icofont-facebook"></i></a>
@@ -479,9 +436,9 @@
 
         <div class="col-xl-3 col-lg-4 col-md-6">
           <div class="member" data-aos="fade-up" data-aos-delay="300">
-            <div class="pic"><img src="assets/img/team/team-4.jpg" alt=""></div>
-            <h4>Amanda Jepson</h4>
-            <span>Accountant</span>
+            <div class="pic"><img src="assets/img/team/ic.png" height="267px" alt=""></div>
+            <h4>Direktorat Innovation Center</h4>
+            <span>Direktorat ini mengelola setiap sistem di Universitas AMIKOM Yogyakarta, seperti contohnya email students dan aplikasi amikom one.</span>
             <div class="social">
               <a href=""><i class="icofont-twitter"></i></a>
               <a href=""><i class="icofont-facebook"></i></a>
@@ -497,77 +454,7 @@
 
 
 
-  <!-- ======= Frequently Asked Questions Section ======= -->
-  <section id="faq" class="faq section-bg">
-    <div class="container">
-
-      <div class="section-title">
-        <h2 data-aos="fade-in">Frequently Asked Questions</h2>
-        <p data-aos="fade-in">Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p>
-      </div>
-
-      <div class="row faq-item d-flex align-items-stretch" data-aos="fade-up">
-        <div class="col-lg-5">
-          <i class="bx bx-help-circle"></i>
-          <h4>Non consectetur a erat nam at lectus urna duis?</h4>
-        </div>
-        <div class="col-lg-7">
-          <p>
-            Feugiat pretium nibh ipsum consequat. Tempus iaculis urna id volutpat lacus laoreet non curabitur gravida. Venenatis lectus magna fringilla urna porttitor rhoncus dolor purus non.
-          </p>
-        </div>
-      </div><!-- End F.A.Q Item-->
-
-      <div class="row faq-item d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="100">
-        <div class="col-lg-5">
-          <i class="bx bx-help-circle"></i>
-          <h4>Feugiat scelerisque varius morbi enim nunc faucibus a pellentesque?</h4>
-        </div>
-        <div class="col-lg-7">
-          <p>
-            Dolor sit amet consectetur adipiscing elit pellentesque habitant morbi. Id interdum velit laoreet id donec ultrices. Fringilla phasellus faucibus scelerisque eleifend donec pretium. Est pellentesque elit ullamcorper dignissim.
-          </p>
-        </div>
-      </div><!-- End F.A.Q Item-->
-
-      <div class="row faq-item d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="200">
-        <div class="col-lg-5">
-          <i class="bx bx-help-circle"></i>
-          <h4>Dolor sit amet consectetur adipiscing elit pellentesque habitant morbi?</h4>
-        </div>
-        <div class="col-lg-7">
-          <p>
-            Eleifend mi in nulla posuere sollicitudin aliquam ultrices sagittis orci. Faucibus pulvinar elementum integer enim. Sem nulla pharetra diam sit amet nisl suscipit. Rutrum tellus pellentesque eu tincidunt. Lectus urna duis convallis convallis tellus.
-          </p>
-        </div>
-      </div><!-- End F.A.Q Item-->
-
-      <div class="row faq-item d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="300">
-        <div class="col-lg-5">
-          <i class="bx bx-help-circle"></i>
-          <h4>Ac odio tempor orci dapibus. Aliquam eleifend mi in nulla?</h4>
-        </div>
-        <div class="col-lg-7">
-          <p>
-            Aperiam itaque sit optio et deleniti eos nihil quidem cumque. Voluptas dolorum accusantium sunt sit enim. Provident consequuntur quam aut reiciendis qui rerum dolorem sit odio. Repellat assumenda soluta sunt pariatur error doloribus fuga.
-          </p>
-        </div>
-      </div><!-- End F.A.Q Item-->
-
-      <div class="row faq-item d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="400">
-        <div class="col-lg-5">
-          <i class="bx bx-help-circle"></i>
-          <h4>Tempus quam pellentesque nec nam aliquam sem et tortor consequat?</h4>
-        </div>
-        <div class="col-lg-7">
-          <p>
-            Molestie a iaculis at erat pellentesque adipiscing commodo. Dignissim suspendisse in est ante in. Nunc vel risus commodo viverra maecenas accumsan. Sit amet nisl suscipit adipiscing bibendum est. Purus gravida quis blandit turpis cursus in
-          </p>
-        </div>
-      </div><!-- End F.A.Q Item-->
-
-    </div>
-  </section><!-- End Frequently Asked Questions Section -->
+  
 
   <!-- ======= Contact Section ======= -->
   <!-- <section id="contact" class="contact section-bg">

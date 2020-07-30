@@ -282,22 +282,22 @@
 
 
 
-            <li class="nav-item">
+          <li class="nav-item">
 
-              <a href="/magang" class="nav-link">
+            <a href="/magang" class="nav-link">
 
-                <i class="nav-icon fas fa-th"></i>
+              <i class="nav-icon fas fa-th"></i>
 
-                <p>
+              <p>
 
-                  Magang
+                Magang
 
-                </p>
+              </p>
 
-              </a>
+            </a>
 
-              </li>
-        </ul>
+          </li>
+          </ul>
 
 
         </nav>

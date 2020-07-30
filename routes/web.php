@@ -17,8 +17,6 @@ Route::get('/', 'ClientController@index');
 // Route::post('/login2', 'AuthController@postlogin')->name('login2');
 // Route::get('/logout', 'AuthController@logout')->name('logout');
 Auth::routes();
-Route::get('/berandaMahasiswa', 'MagangController@index3')->name('adminHome');
-Route::get('/berandaPerusahaan', 'MagangController@index2')->name('perusahaan');
 // Route::get('/home', 'HomeController@index')->name('home');
 
 Route::get('/home', 'AdminController@index')->name('home');
@@ -30,7 +28,7 @@ Route::delete('/info/{info}', 'InfoAkademik@destroy');
 Route::get('/info/{info}/edit', 'InfoAkademik@edit');
 Route::patch('/info/{info}', 'InfoAkademik@update');
 
- // Fasilitas
+// Fasilitas
 Route::get('/fasilitas', 'FasilitasController@index');
 Route::get('/fasilitas/create', 'FasilitasController@create');
 Route::get('/fasilitas/{fasilitas}', 'FasilitasController@show');
@@ -80,11 +78,13 @@ Route::get('/magang/{magang}/edit','MagangController@edit');
 Route::patch('/magang/{magang}','MagangController@update');
 
 // editPerusahaan
+Route::get('/berandaMahasiswa', 'MagangController@index3')->name('adminHome');
 Route::get('/berandaPerusahaan/{magang}','MagangController@show2');
 Route::get('/berandaPerusahaan/{magang}/edit','MagangController@edit2');
 Route::patch('/berandaPerusahaan/{magang}','MagangController@update2');
 
 // editPerusahaan
+Route::get('/berandaPerusahaan', 'MagangController@index2')->name('perusahaan');
 Route::get('/berandaMahasiswa/{magang}','MagangController@show3');
 Route::get('/berandaMahasiswa/{magang}/edit','MagangController@edit3');
 Route::patch('/berandaMahasiswa/{magang}','MagangController@update3');
